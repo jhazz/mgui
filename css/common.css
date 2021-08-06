@@ -1,0 +1,60 @@
+@font-face {font-family: monospaceregular; src:url(../images/LiberationMono-Regular.ttf);}
+@font-face {font-family: sanscond; src:url(../images/LiberationSansNarrow-Bold.ttf);}
+html {margin:0; padding:0;}
+body {margin:0; padding:0; background-color:#555050; overflow:hidden; font-family:sanscond, Arial,sans-serif; color:white; font-weight:bold;font-size:14px;}
+.mockcontainer {width:100%; height:100%; display:table;}
+.mockwrapper {display:table-cell; vertical-align:middle; text-align:center;}
+.mockbody { position:relative;margin:auto; width:1067px; height:749px; background:url(../images/mbgui_mock.jpg);}
+#mockscreen {position:absolute; left:133px; top:87px; width:800px;height:480px; background-color:#101010; background:url(../images/bg_blue4.jpg);}
+
+#topBar {width:100%; padding-top:5px; height:38px; position:absolute; top:0px; left:0px; background:url(../images/topbar_bg_blue.gif); background-color:#404040;}
+#topBarLeft {padding:0 20 0 20;}
+#topBarRight{padding:0 20 0 20;}
+.topBarText{height:20px; margin:0; line-height:32px; overflow:hidden;padding:0 0 10 0;display:inline-block;font-family:Consolas, Arial, sans-serif; font-size:28px; font-weight:bold; color:#ffff80; bo rder:solid green 1px; text-shadow:1px 1px 0 #000}
+.vbtn {width:51px;height:100px; position:absolute; cursor:pointer; bor der:solid green 1px;}
+.hbtn {width:92px;height:51px;  position:absolute; cursor:pointer; bor der:solid green 1px;}
+#btnF1 {left:30px; top:117px;}
+#btnF2 {left:30px; top:222px;}
+#btnF3 {left:30px; top:328px;}
+#btnF4 {left:30px; top:435px;}
+#btnF5 {left:985px; top:117px;}
+#btnF6 {left:985px; top:222px;}
+#btnF7 {left:985px; top:328px;}
+#btnF8 {left:985px; top:435px;}
+
+#btnBack  {left:175px; top:643px;}
+#btnLeft {left:300px; top:643px;}
+#btnRight{left:424px; top:643px;}
+#btnDown {left:549px; top:643px;}
+#btnUp   {left:674px; top:643px;}
+#btnOk  {left:800px; top:643px;}
+
+.btnrect_9g_a {width:13px; height:15px;background:url(../images/buttons/btnrect_9g_a.gif);display:inline-block;}
+.btnrect_9g_b {width:289px;height:15px;background:url(../images/buttons/btnrect_9g_b.gif);display:inline-block; background-size: 100% 100%;}
+.btnrect_9g_c {width:13px; height:15px;background:url(../images/buttons/btnrect_9g_c.gif);display:inline-block;}
+.btnrect_9g_d {width:13px; height:29px;background:url(../images/buttons/btnrect_9g_d.gif);display:inline-block;background-size: 100% 100%;}
+.btnrect_9g_e {width:289px;height:29px;background:url(../images/buttons/btnrect_9g_e.gif);display:inline-block;background-size: 100% 100%;}
+.btnrect_9g_f {width:13px; height:29px;background:url(../images/buttons/btnrect_9g_f.gif);display:inline-block;background-size: 100% 100%;}
+.btnrect_9g_g {width:13px; height:16px;background:url(../images/buttons/btnrect_9g_g.gif);display:inline-block;}
+.btnrect_9g_h {width:289px;height:16px;background:url(../images/buttons/btnrect_9g_h.gif);display:inline-block; background-size: 100% 100%;}
+.btnrect_9g_i {width:13px; height:16px;background:url(../images/buttons/btnrect_9g_i.gif);display:inline-block;}
+.buttonText {position:absolute; vertical-align:middle;text-align:center; font-weight:normal; overflow:hidden;font-size:31px; }
+
+
+.fixedFontArea {padding:3px;border:solid 1px #808050; border-radius: 8px; overflow:hidden; color:#FFFFFF; line-height:47px;
+  font-size:37px; font-family: monospaceregular;font-weight:normal; white-space:pre-wrap;text-align:left;}
+
+.smallTextArea{padding:3px;border:solid 1px #808050; border-radius: 8px; overflow:hidden; color:#FFFFFF; line-height:47px;
+  font-size:20px; font-family: monospaceregular;font-weight:normal; white-space:pre-wrap;text-align:left;}
+
+.ordinalArea  {padding:10px;border:groove 3px #808050; border-radius:8px; overflow:hidden; color:d0d080; font-size:50px;
+  font-family: monospaceregular;font-weight:normal; white-space:pre-wrap;text-align:center;}
+
+
+.subArea {font-size:22px;line-height:12px; fo nt-weight:bold}
+.subAreaLargeText{font-size:50px; font-family: monospaceregular;font-weight:normal; white-space:pre-wrap;text-align:center;}
+.subAreaSmallText{font-size:22px; font-family: monospaceregular;font-weight:normal; white-space:pre-wrap;text-align:center;}
+
+.speedArea {padding:10px;border:groove 3px #808050; border-radius: 8px; overflow:hidden; color:d0d080; line-height:80px; backg round-color:#202020;
+  font-size:50px; font-family: monospaceregular;font-weight:normal; white-space:pre-wrap;text-align:center;}
+

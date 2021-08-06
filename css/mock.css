@@ -1,0 +1,41 @@
+@font-face {font-family: monospaceregular; src:url(../images/LiberationMono-Regular.ttf);}
+@font-face {font-family: sanscond; src:url(../images/LiberationSansNarrow-Bold.ttf);}
+html {margin:0; padding:0;}
+body {margin:0; padding:0; background-color:#eeeeee; font-family:sanscond, Arial,sans-serif; color:#222222; font-weight:bold;font-size:14px;}
+p.pre {font-weight:normal;padding:10pt;  white-space:pre-wrap}
+h {font-size:x-large;display:block}
+.mockcontainer {width:100%; height:100%; display:table;}
+.mockwrapper {display:table-cell; vertical-align:middle; text-align:center;}
+.mockbody { position:relative;margin:auto; width:1067px; height:749px; background:url(../images/mbgui_mock.jpg);}
+#mockscreen { background-color:#dddddd; padding:5px;}
+#logger {z-index:1;margin:auto; text-align:left; width:100%; height:400px; overflow:auto; border:solid 1px #606060; background-color:#202020; color:#a0a0a0; font-size:14px; font-family:consolas,courier;font-weight:normal;}
+#topBar {width:100%; padding-top:5px; height:38px; position:absolute; top:0px; left:0px; background:url(../images/topbar_bg_blue.gif); background-color:#404040;}
+#topBarLeft {padding:0 20 0 20;}
+#topBarRight{padding:0 20 0 20;}
+.topBarText{height:20px; margin:0; line-height:32px; overflow:hidden;padding:0 0 10 0;display:inline-block;font-family:Consolas, Arial, sans-serif; font-size:28px; font-weight:bold; color:#ffff80; bo rder:solid green 1px; text-shadow:1px 1px 0 #000}
+.vbtn {width:51px;height:100px; position:absolute; cursor:pointer; bor der:solid green 1px;}
+.hbtn {width:92px;height:51px;  position:absolute; cursor:pointer; bor der:solid green 1px;}
+
+.fixedFontArea {padding:3px;border:solid 1px #808050; border-radius: 8px; overflow:hidden; color:#FFFFFF; line-height:47px;
+  font-size:37px; font-family: monospaceregular;font-weight:normal; white-space:pre-wrap;text-align:left;}
+
+.smallTextArea{margin:7px; padding:3px;border:solid 1px #808050; border-radius: 8px; overflow:hidden; 
+  color:#000000; 
+  line-height:47px;
+  background-color: #ffffff;
+  font-size:20px; 
+  font-family: consolas,courier;
+  font-weight:normal; 
+  white-space:pre-wrap;text-align:left;
+  }
+
+.ordinalArea  {padding:10px;border:groove 3px #808050; border-radius:8px; overflow:hidden; color:d0d080; font-size:50px;
+  font-family: monospaceregular;font-weight:normal; white-space:pre-wrap;text-align:center;}
+
+.subArea {font-size:22px;line-height:12px; fo nt-weight:bold}
+.subAreaLargeText{font-size:50px; font-family: monospaceregular;font-weight:normal; white-space:pre-wrap;text-align:center;}
+.subAreaSmallText{font-size:22px; font-family: monospaceregular;font-weight:normal; white-space:pre-wrap;text-align:center;}
+
+.speedArea {padding:10px;border:groove 3px #808050; border-radius: 8px; overflow:hidden; color:d0d080; line-height:80px; backg round-color:#202020;
+  font-size:50px; font-family: monospaceregular;font-weight:normal; white-space:pre-wrap;text-align:center;}
+

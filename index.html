@@ -1,0 +1,84 @@
+<html>
+<head>
+    <title>MGUI mock</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="pragma" content="no-cache"/>
+    <link rel="stylesheet" type="text/css" href="css/mock.css" media="all" />
+    <script src="mgui_base.js"></script>
+    <script src="mgui_area.js"></script>
+    <script src="mgui_datagrid.js"></script>
+</head>
+<body onload="mock_main()">
+   <p class="pre">
+     <h>MGUI - Javascript MVVM binding GUI library</h>
+      This is a mock page to test. At first, enter any date value inside the top field. 
+      Then, leave field. Library calculates text inside the second field using formula:
+      <b>{={/env/clock#localTime}+" -- "+{/env/clock#localTime}}</b>
+      The third field contains linkage to the <b>width</b> property of the first field component.
+      When you change value and leave third field the with of the first field changes.
+      </p1>
+   <div id="mockscreen"></div>
+   <div id="logger" ></div>
+</body>
+</html>
+
+
+<script>
+mgui.datasources={
+  'testdata':{
+    '#baseUrl':'getdata.php?'
+  }
+}
+
+mgui.schema = {
+  'env':{
+    'clock':{
+      '#localTime':{type:'date',nullable:1},
+    }
+  },
+}
+
+mgui.pages={
+  'HOME':{
+    '#nodeClass':'page',
+    'area1':{
+      '#nodeClass':'area',
+      '#editable':'true',
+      '#css':'smallTextArea',
+      '#width':420,
+      '#text':'{/env/clock#localTime}'
+    },
+    'area2':{
+      '#nodeClass':'area',
+      '#css':'smallTextArea',
+      '#width':400,
+      '#text':'{={/env/clock#localTime}+" -- "+{/env/clock#localTime}}'
+    },
+    
+    'area3':{
+      '#nodeClass':'area',
+      '#css':'smallTextArea',
+      '#editable':'true',
+      '#text':'{/vmodel/pager/HOME/area1#width}'
+    },
+    'grid1':{
+      '#nodeClass':'datagrid',
+      '#height':120
+    }
+  }
+}
+
+function mock_main(){
+  window.onerror = function (errorMsg, url, lineNumber, column, errorObj) { 
+    console.error('Error: ' + errorMsg + ' Script: ' + url + ' Line: ' + lineNumber + ' Column: ' + column + ' StackTrace: ' + errorObj); 
+  }
+
+  mgui.log ('Hello!')
+  mgui.guiContainer=document.getElementById("mockscreen");
+  var scopeStack=mgui.openPath('/config/server',1)
+  mgui.openPath('/env/clock',1,scopeStack)
+  mgui.setAttribute(scopeStack,"localTime",{data:'18-12-30', type:'date'})
+  mgui.showPage("HOME",function(){})
+
+}
+</script>
